@@ -1,16 +1,8 @@
 <?php
 session_start();
 
-// Check if user is not logged in, redirect to login page
 if (!isset($_SESSION['username'])) {
     header("Location: index.php");
-    exit;
-}
-
-// Check if the intended destination was profile, redirect accordingly
-if (isset($_SESSION['intended_destination']) && $_SESSION['intended_destination'] == 'profile') {
-    unset($_SESSION['intended_destination']); // Remove it after use
-    header("Location: profile.php");
     exit;
 }
 ?>
