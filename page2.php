@@ -12,7 +12,7 @@ if (!isset($_SESSION['username'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>PAGE 2</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -53,18 +53,17 @@ if (!isset($_SESSION['username'])) {
             background-color: #45a049;
         }
 
-        .logout {
+        .back-btn {
             margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>Welcome to the Dashboard</h2>
-        <p>Hello, <?php echo $_SESSION['username']; ?>!</p>
-        <p><a href="profile.php">View Profile</a></p>
-        <p class="logout"><a href="logout.php">Logout</a></p>
+        <h2>PAGE 2</h2>
+        <p>PAGE 2 de <?php echo $_SESSION['username']; ?>.</p>
+        <p><a href="page1.php" class="back-btn">PAGE 1 </a></p>
+        <p><a href="logout.php">Deconnexion</a></p>
     </div>
 </body>
 </html>
-
